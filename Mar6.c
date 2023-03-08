@@ -6,7 +6,7 @@ double tong (int sum, ...) {
     va_start (ptr, sum);
     for (int i = 0; i < sum; i++)
     {
-        if (*ptr != 0){ 
+        if (ptr != 0){ 
             flag = flag + va_arg(ptr, int);
         } else {
             flag = flag + va_arg(ptr, double);
@@ -20,3 +20,4 @@ int main(){
     printf("Tong: %.f\n", tong (5, 7, 3.4, 3, 8, 1));
     return 0;
 } 
+//chua chay duoc
